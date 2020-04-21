@@ -33,8 +33,7 @@ namespace BankingProject
             if (b1 > totalbal)
             {
                 var item2 = accController.Get(transferaccNo).FirstOrDefault();
-                item2.Balance = item2.Balance + totalbal;
-                item.Balance = item.Balance - totalbal;
+                accController.MakeTransaction(totalbal, item, item2);
                 Transfer transfer = new Transfer();
                 {
                     transfer.AccountNo = Convert.ToDecimal(txtTransferFrom.Text);
@@ -45,7 +44,6 @@ namespace BankingProject
                 }
                 transferController.Add(transfer); 
                 MessageBox.Show("Успешeн превод!");
-                accController.SaveChanges();
             }
         }
         private void btnDetails_Click(object sender, EventArgs e)

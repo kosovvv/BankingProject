@@ -80,7 +80,7 @@ namespace BankingProject
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             decimal accNo = Convert.ToDecimal(txtAccNumber.Text);
-            var acc = accController.Get(accNo).First(); //useracc
+            var acc = accController.Get(accNo).First();
             acc.Name = txtName.Text;
             acc.Date = dateTimePicker1.Value.ToString();
             acc.MotherName = txtMother.Text;
@@ -111,7 +111,7 @@ namespace BankingProject
             acc.Address = txtBoxAddress.Text;
             acc.Oblast = txtBoxOblast.Text;
             acc.State = txtBoxCity.Text;
-            accController.SaveChanges();
+            accController.Update(acc);
             MessageBox.Show("Данните са обновени!");
         }
     }

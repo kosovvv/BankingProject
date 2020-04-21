@@ -28,6 +28,12 @@ namespace BankingProject.Business
             context.UserAccount.Add(userAccount);
             context.SaveChanges();
         }
+        public void Update(UserAccount userAccount)
+        {
+            var item = this.Get(userAccount.AccountNo).FirstOrDefault();
+            context.Entry(item).CurrentValues.SetValues(userAccount);
+            this.context.SaveChanges();
+        }
         public void Delete(decimal accNo)
         {
             UserAccount acc = context.UserAccount.First(s => s.AccountNo.Equals(accNo));
@@ -47,8 +53,10 @@ namespace BankingProject.Business
             var items = context.UserAccount.Where(a => a.Name == name);
             return items.ToList();
         }
-        public void SaveChanges()
+        public void MakeTransaction(decimal totalbal, UserAccount item, UserAccount item2)
         {
+            item2.Balance = item2.Balance + totalbal;
+            item.Balance = item.Balance - totalbal;
             context.SaveChanges();
         }
     }
