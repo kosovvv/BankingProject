@@ -64,5 +64,10 @@ namespace BankingProject.Business
             item.Balance -= Convert.ToDecimal(debitAmount);
             context.SaveChanges();
         }
+        public void MakeDepositTransaction(decimal? debitAmount, UserAccount item)
+        {
+            item.Balance += Convert.ToDecimal(debitAmount);
+            context.SaveChanges();
+        }
     }
 }

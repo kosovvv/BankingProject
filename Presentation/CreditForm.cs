@@ -45,8 +45,7 @@ namespace BankingProject
             depositcontroller.Add(deposit);
             decimal accNo = Convert.ToDecimal(txtAccNum.Text);
             var item = accController.Get(accNo).FirstOrDefault();
-            item.Balance = item.Balance + Convert.ToDecimal(txtDepositAmount.Text);
-            depositcontroller.SaveChanges();
+            accController.MakeDepositTransaction(deposit.DipAmount, item);
             MessageBox.Show("Успешен депозит!");
         }
     }

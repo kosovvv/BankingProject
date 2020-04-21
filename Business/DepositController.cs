@@ -29,9 +29,5 @@ namespace BankingProject.Business
             var items = (from u in context.Deposit where u.AccountNo == accNo select u);
             return items.ToList();
         }
-        public void SaveChanges()
-        {
-            context.SaveChanges();
-        }
     }
 }
