@@ -45,8 +45,7 @@ namespace BankingProject
             debitController.Add(debit);
             decimal accNo = Convert.ToDecimal(txtAccNum.Text);
             var item = accController.Get(accNo).FirstOrDefault();
-            item.Balance = item.Balance - Convert.ToDecimal(txtDepositAmount.Text);
-            debitController.SaveChanges();
+            accController.MakeDebitTransaction(debit.DebAmount, item);
             MessageBox.Show("Успешено теглене!");
         }
     }
