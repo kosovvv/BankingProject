@@ -12,7 +12,6 @@ using System.Windows.Forms;
 
 namespace BankingProject
 {
-    // Completed - 100%
     public partial class CustomerList : Form
     {
         UserAccountController accController = new UserAccountController();
