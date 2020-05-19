@@ -25,15 +25,15 @@ namespace BankingProject
         private void btnTransfer_Click(object sender, EventArgs e)
         {
             decimal accNo = Convert.ToDecimal(txtTransferFrom.Text);
-            var item = accController.Get(accNo).FirstOrDefault(); 
-            txtName.Text = item.Name;
-            decimal b1 = Convert.ToDecimal(item.Balance);
+            var accSend = accController.Get(accNo).FirstOrDefault(); 
+            txtName.Text = accSend.Name;
+            decimal b1 = Convert.ToDecimal(accSend.Balance);
             decimal totalbal = Convert.ToDecimal(txtTransfer.Text);
             decimal transferaccNo = Convert.ToDecimal(txtTransferDestination.Text);
             if (b1 > totalbal)
             {
-                var item2 = accController.Get(transferaccNo).FirstOrDefault();
-                accController.MakeTransaction(totalbal, item, item2);
+                var accRecieve = accController.Get(transferaccNo).FirstOrDefault();
+                accController.MakeTransaction(totalbal, accSend, accRecieve);
                 Transfer transfer = new Transfer();
                 {
                     transfer.AccountNo = Convert.ToDecimal(txtTransferFrom.Text);
@@ -43,7 +43,7 @@ namespace BankingProject
                     transfer.Balance = Convert.ToDecimal(txtTransfer.Text);
                 }
                 transferController.Add(transfer); 
-                MessageBox.Show($"Успешeно преведохте {transfer.Balance}лв. по сметката на {item2.Name}!");
+                MessageBox.Show($"Успешeно преведохте {transfer.Balance}лв. по сметката на {accRecieve.Name}!");
             }
         }
         private void btnDetails_Click(object sender, EventArgs e)

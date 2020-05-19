@@ -53,10 +53,10 @@ namespace BankingProject.Business
             var items = context.UserAccount.Where(a => a.Name == name);
             return items.ToList();
         }
-        public void MakeTransaction(decimal totalbal, UserAccount item, UserAccount item2)
+        public void MakeTransaction(decimal totalbal, UserAccount accSend, UserAccount accRecieve)
         {
-            item2.Balance = item2.Balance + totalbal;
-            item.Balance = item.Balance - totalbal;
+            accRecieve.Balance = accRecieve.Balance + totalbal;
+            accSend.Balance = accSend.Balance - totalbal;
             context.SaveChanges();
         }
         public void MakeDebitTransaction(decimal? debitAmount,UserAccount item)
