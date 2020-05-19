@@ -43,7 +43,7 @@ namespace BankingProject
                     transfer.Balance = Convert.ToDecimal(txtTransfer.Text);
                 }
                 transferController.Add(transfer); 
-                MessageBox.Show("Успешeно преведохте " + transfer.Balance + "лв. по сметката на " + item2.Name + "!");
+                MessageBox.Show("Успешeн превод!");
             }
         }
         private void btnDetails_Click(object sender, EventArgs e)
