@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace BankingProject.Business
 {
+    /*
+   The TransferController class
+   Contains all methods for performing with transfer
+   */
     public class TransferController
     {
         private banking_dbContext context;
@@ -19,11 +23,13 @@ namespace BankingProject.Business
         {
             context = new banking_dbContext();
         }
+        //Adds transfer to database and saves via context
         public void Add(Transfer transfer)
         {
             context.Transfer.Add(transfer);
             context.SaveChanges();
         }
+        //Retrieve the transfer details by Account Number
         public List<Transfer> GetTransferDetails(decimal accNo)
         {
             var items = (from u in context.Transfer where u.AccountNo == accNo select u);
