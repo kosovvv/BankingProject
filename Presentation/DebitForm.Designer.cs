@@ -39,7 +39,7 @@
             this.txtOldBalance = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtDepositAmount = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnGetDetails = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -134,15 +134,15 @@
             this.txtDepositAmount.Size = new System.Drawing.Size(153, 20);
             this.txtDepositAmount.TabIndex = 16;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Location = new System.Drawing.Point(55, 327);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 38);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Запази";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSave.Location = new System.Drawing.Point(55, 327);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(95, 38);
+            this.btnSave.TabIndex = 17;
+            this.btnSave.Text = "Запази";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnGetDetails
             // 
@@ -170,7 +170,7 @@
             this.ClientSize = new System.Drawing.Size(752, 412);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.btnGetDetails);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtDepositAmount);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtOldBalance);
@@ -202,7 +202,7 @@
         private System.Windows.Forms.TextBox txtOldBalance;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox txtDepositAmount;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnGetDetails;
         private System.Windows.Forms.Label lblDate;
     }

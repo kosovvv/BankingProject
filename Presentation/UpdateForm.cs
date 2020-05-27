@@ -13,15 +13,20 @@ using System.Windows.Forms;
 
 namespace BankingProject
 {
-    // Completed - 100%
+    /*
+    The Update form code
+    Contains all background services for this form
+    */
     public partial class UpdateForm : Form
     {
+        //Initialize the required controllers and constructor
         UserAccountController accController = new UserAccountController();
         BindingList<UserAccount> bl = new BindingList<UserAccount>();
         public UpdateForm()
         {
             InitializeComponent();
         }
+        //Run when "Details" button is clicked. Get information for the UserAccount by Number
         private void btnDetalis_Click(object sender, EventArgs e)
         {
             decimal AccNo = Convert.ToDecimal(txtAccNumber.Text);
@@ -32,6 +37,7 @@ namespace BankingProject
             }
             dataGridView1.DataSource = bl;
         }
+        //Run when "Search" button is clicked. Get information for the UserAccount by Name
         private void btnSearch_Click(object sender, EventArgs e)
         {
             var Name = txtName.Text;
@@ -42,6 +48,7 @@ namespace BankingProject
             }
             dataGridView1.DataSource = bl;
         }
+        //Run when is UserAccount data is clicked on datagridview. Loads the data in the textboxes.
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             decimal accNo = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
@@ -71,12 +78,14 @@ namespace BankingProject
                 rbtnUnmarried1.Checked = true;
             }
         }
+        //Run when "Delete" button is clicked. Deletes the specified account from the database via UserAccoountController.
         private void btnDelete_Click(object sender, EventArgs e)
         {
             bl.RemoveAt(dataGridView1.SelectedRows[0].Index);
             accController.Delete(decimal.Parse(txtAccNumber.Text));
             dataGridView1.DataSource = bl;
         }
+        //Run when "Update" button is clicked. Saves the edited data to the database via UserAccountController.
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             decimal accNo = Convert.ToDecimal(txtAccNumber.Text);

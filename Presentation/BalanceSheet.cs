@@ -12,8 +12,13 @@ using System.Windows.Forms;
 
 namespace BankingProject
 {
+    /*
+   The BalanceSheet form code
+   Contains all background services for this form
+   */
     public partial class BalanceSheet : Form
     {
+        //Initialize required controllers and constructor
         DebitController debitcontroller = new DebitController();
         DepositController depositcontroller = new DepositController();
         TransferController transfercontroller = new TransferController();
@@ -21,6 +26,7 @@ namespace BankingProject
         {
             InitializeComponent();
         }
+        //Run when "Show" button is clicked. Get information for debit, deposit and transfer of specified useraccount
         private void btnShow_Click(object sender, EventArgs e)
         {
             decimal b = Convert.ToDecimal(txtName.Text);

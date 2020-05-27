@@ -13,8 +13,13 @@ using System.Windows.Forms;
 
 namespace BankingProject
 {
+    /*
+    The CreditForm code
+    Contains all background services for this form
+    */
     public partial class CreditForm : Form
     {
+        //Initialize the required controllers and constructor
         UserAccountController accController = new UserAccountController();
         DepositController depositcontroller =  new DepositController();
         public CreditForm()
@@ -24,6 +29,7 @@ namespace BankingProject
             comboBox1.Items.Add("Чек");
             lblDate.Text = DateTime.UtcNow.ToString("MM/dd/yyyy");
         }
+        //Run when "Details" button is clicked. Get information for the UserAccount by Number
         private void btnGetDetails_Click(object sender, EventArgs e)
         {
             decimal accNo = Convert.ToDecimal(txtAccNum.Text);
@@ -31,6 +37,7 @@ namespace BankingProject
             txtName.Text = item.Name;
             txtOldBalance.Text = Convert.ToString(item.Balance);
         }
+        //Run when "Update" button is clicked. Get information for the detalis of UserAccount and update them with specified data
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Deposit deposit = new Deposit();

@@ -11,12 +11,17 @@ using System.Windows.Forms;
 
 namespace BankingProject
 {
+    /*
+   The Login form code
+   Contains all background services for this form
+   */
     public partial class Login_form : Form
     {
         public Login_form()
         {
             InitializeComponent();
         }
+        //Runs when "Login" button is clicked. Checks the password.
         private void btnLogin_Click(object sender, EventArgs e)
         {
             banking_dbContext db = new banking_dbContext();

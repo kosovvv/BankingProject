@@ -13,15 +13,22 @@ using System.Windows.Forms;
 
 namespace BankingProject
 {
+    /*
+   The transfer form code
+   Contains all background services for this form
+   */
     public partial class TransferForm : Form
     {
+        //Initialize the required controllers and constructor
         UserAccountController accController = new UserAccountController();
         TransferController transferController = new TransferController();
         public TransferForm()
         {
             InitializeComponent();
+            //Shows daily date
             lblDate.Text = DateTime.UtcNow.ToString("MM/dd/yyyy");
         }
+        //Run when "Transfer" button is clicked. Creates transfer, make operation between accounts and send saves to the database via TransferController.
         private void btnTransfer_Click(object sender, EventArgs e)
         {
             decimal accNo = Convert.ToDecimal(txtTransferFrom.Text);
@@ -46,6 +53,7 @@ namespace BankingProject
                 MessageBox.Show($"Успешeно преведохте {transfer.Balance}лв. по сметката на {accRecieve.Name}!");
             }
         }
+        //Run when "Details" button is clicked. Get information for the UserAccount by Number
         private void btnDetails_Click(object sender, EventArgs e)
         {
             decimal accNo = Convert.ToDecimal(txtTransferFrom.Text);

@@ -14,8 +14,13 @@ using BankingProject.Business;
 
 namespace BankingProject
 {
+    /*
+    The newAccount form code
+    Contains all background services for this form
+    */
     public partial class newAccount : Form
     {
+        //Initialize the required controllers,constructor and variables
         private UserAccountController accController = new UserAccountController();
         decimal no;
 
@@ -25,8 +30,10 @@ namespace BankingProject
             var item = accController.GetAllAccounts();
             no = item.LastOrDefault().AccountNo + 1;
             txtAccNumber.Text = Convert.ToString(no);
+            //Shows daily date
             lblDate.Text = DateTime.Now.ToString("MM/dd/yyyy");
         }
+        //Run when "Save" button is clicked. Takes entered data from the textboxes and creates useraccount with it. Adds the useraccount to the database.
         private void btnSave_Click(object sender, EventArgs e)
         {
             string gender = "";

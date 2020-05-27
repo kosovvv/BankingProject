@@ -13,8 +13,13 @@ using System.Windows.Forms;
 
 namespace BankingProject
 {
+    /*
+   The DebitForm code
+   Contains all background services for this form
+   */
     public partial class DebitForm : Form
     {
+        //Initialize the required controllers and constructor
         UserAccountController accController = new UserAccountController();
         DebitController debitController = new DebitController();
         public DebitForm()
@@ -24,6 +29,7 @@ namespace BankingProject
             comboBox1.Items.Add("Чек");
             lblDate.Text = DateTime.UtcNow.ToString("MM/dd/yyyy");
         }
+        //Run when "Details" button is clicked. Get information for the UserAccount by Number
         private void btnGetDetails_Click(object sender, EventArgs e)
         {
             decimal accNo = Convert.ToDecimal(txtAccNum.Text);
@@ -31,7 +37,8 @@ namespace BankingProject
             txtName.Text = item.Name;
             txtOldBalance.Text = Convert.ToString(item.Balance);
         }
-        private void button1_Click(object sender, EventArgs e)
+        //Run when "Save" button is clicked. Get information for the detalis of UserAccount and update them with specified data
+        private void btnSave_Click(object sender, EventArgs e)
         {
             Debit debit = new Debit();
             {
