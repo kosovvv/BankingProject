@@ -20,9 +20,9 @@ namespace BankingProject.Tests
             var data = new List<UserAccount>()
                 {
                     new UserAccount(1, "Georgi Georgiev", "11/06/2000", "0878444484", "bul Bulgaria 4", "Smolyan", "Smolyan", "Male", "married",
-                    "Maria", "Yordan", 7500, date.ToString()),
+                    null, null, 7500, date.ToString()),
                     new UserAccount(2, "Ivan Ivanov", "22/11/2001", "0878171711", "bul Bulgaria 3", "Smolyan", "Smolyan", "Male", "married",
-                    "Ivanka", "Ivancho", 5000, date.ToString())
+                   null, null, 5000, date.ToString())
                 }.AsQueryable();
             var mockSet = new Mock<DbSet<UserAccount>>();
             mockSet.As<IQueryable<UserAccount>>().Setup(m => m.Provider).Returns(data.Provider);

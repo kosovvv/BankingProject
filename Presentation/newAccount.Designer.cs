@@ -47,10 +47,6 @@
             this.txtBoxAddress = new System.Windows.Forms.TextBox();
             this.txtBoxOblast = new System.Windows.Forms.TextBox();
             this.txtBoxCity = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtMother = new System.Windows.Forms.TextBox();
-            this.txtFather = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtBal = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -229,42 +225,10 @@
             this.txtBoxCity.Size = new System.Drawing.Size(193, 20);
             this.txtBoxCity.TabIndex = 16;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(390, 294);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Майка";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(390, 316);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 13);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Баща";
-            // 
-            // txtMother
-            // 
-            this.txtMother.Location = new System.Drawing.Point(436, 291);
-            this.txtMother.Name = "txtMother";
-            this.txtMother.Size = new System.Drawing.Size(168, 20);
-            this.txtMother.TabIndex = 19;
-            // 
-            // txtFather
-            // 
-            this.txtFather.Location = new System.Drawing.Point(436, 317);
-            this.txtFather.Name = "txtFather";
-            this.txtFather.Size = new System.Drawing.Size(168, 20);
-            this.txtFather.TabIndex = 20;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(390, 345);
+            this.label12.Location = new System.Drawing.Point(387, 341);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(44, 13);
             this.label12.TabIndex = 21;
@@ -272,7 +236,7 @@
             // 
             // txtBal
             // 
-            this.txtBal.Location = new System.Drawing.Point(436, 342);
+            this.txtBal.Location = new System.Drawing.Point(437, 335);
             this.txtBal.Name = "txtBal";
             this.txtBal.Size = new System.Drawing.Size(168, 20);
             this.txtBal.TabIndex = 22;
@@ -336,10 +300,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtBal);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.txtFather);
-            this.Controls.Add(this.txtMother);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtBoxCity);
             this.Controls.Add(this.txtBoxOblast);
             this.Controls.Add(this.txtBoxAddress);
@@ -389,10 +349,6 @@
         private System.Windows.Forms.TextBox txtBoxAddress;
         private System.Windows.Forms.TextBox txtBoxOblast;
         private System.Windows.Forms.TextBox txtBoxCity;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtMother;
-        private System.Windows.Forms.TextBox txtFather;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtBal;
         private System.Windows.Forms.GroupBox groupBox2;

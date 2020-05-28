@@ -55,8 +55,6 @@ namespace BankingProject
             var item = accController.Get(accNo).FirstOrDefault();
             txtAccNumber.Text = item.AccountNo.ToString();
             txtName.Text = item.Name;
-            txtMother.Text = item.MotherName;
-            txtFather.Text = item.FatherName;
             txtBoxPhone.Text = item.PhoneNo;
             txtBoxAddress.Text = item.Address;
             txtBoxOblast.Text = item.Oblast;
@@ -92,8 +90,8 @@ namespace BankingProject
             var acc = accController.Get(accNo).First();
             acc.Name = txtName.Text;
             acc.Date = dateTimePicker1.Value.ToString();
-            acc.MotherName = txtMother.Text;
-            acc.FatherName = txtFather.Text;
+            acc.MotherName = null;
+            acc.FatherName = null;
             acc.PhoneNo = txtBoxPhone.Text;
             if (rButtonMale1.Checked == true)
             {

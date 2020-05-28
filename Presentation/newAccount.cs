@@ -65,8 +65,8 @@ namespace BankingProject
                 acc.State = txtBoxCity.Text;
                 acc.Gender = gender;
                 acc.MaritialStatus = m_status;
-                acc.MotherName = txtMother.Text;
-                acc.FatherName = txtFather.Text;
+                acc.MotherName = null;
+                acc.FatherName = null;
                 acc.Balance = Convert.ToDecimal(txtBal.Text);
                 acc.Date = lblDate.Text;
             };

@@ -372,6 +372,9 @@
     <EmbeddedResource Include="Presentation\DebitForm.resx">
       <DependentUpon>DebitForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\newAccount.resx">
+      <DependentUpon>newAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -32,15 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtMother = new System.Windows.Forms.TextBox();
-            this.txtFather = new System.Windows.Forms.TextBox();
             this.txtBoxPhone = new System.Windows.Forms.TextBox();
             this.txtBoxAddress = new System.Windows.Forms.TextBox();
             this.txtBoxOblast = new System.Windows.Forms.TextBox();
@@ -100,28 +96,10 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Дата на раждане";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 232);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Майка";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(43, 278);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Баща";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(43, 318);
+            this.label7.Location = new System.Drawing.Point(43, 232);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 13);
             this.label7.TabIndex = 6;
@@ -130,7 +108,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(43, 363);
+            this.label8.Location = new System.Drawing.Point(43, 266);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 13);
             this.label8.TabIndex = 7;
@@ -139,7 +117,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(43, 398);
+            this.label9.Location = new System.Drawing.Point(43, 295);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 8;
@@ -148,7 +126,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(43, 441);
+            this.label10.Location = new System.Drawing.Point(43, 328);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 13);
             this.label10.TabIndex = 9;
@@ -161,51 +139,37 @@
             this.txtName.Size = new System.Drawing.Size(157, 20);
             this.txtName.TabIndex = 10;
             // 
-            // txtMother
-            // 
-            this.txtMother.Location = new System.Drawing.Point(146, 232);
-            this.txtMother.Name = "txtMother";
-            this.txtMother.Size = new System.Drawing.Size(157, 20);
-            this.txtMother.TabIndex = 12;
-            // 
-            // txtFather
-            // 
-            this.txtFather.Location = new System.Drawing.Point(146, 278);
-            this.txtFather.Name = "txtFather";
-            this.txtFather.Size = new System.Drawing.Size(157, 20);
-            this.txtFather.TabIndex = 13;
-            // 
             // txtBoxPhone
             // 
-            this.txtBoxPhone.Location = new System.Drawing.Point(146, 318);
+            this.txtBoxPhone.Location = new System.Drawing.Point(146, 229);
             this.txtBoxPhone.Name = "txtBoxPhone";
             this.txtBoxPhone.Size = new System.Drawing.Size(157, 20);
             this.txtBoxPhone.TabIndex = 14;
             // 
             // txtBoxAddress
             // 
-            this.txtBoxAddress.Location = new System.Drawing.Point(146, 360);
+            this.txtBoxAddress.Location = new System.Drawing.Point(146, 263);
             this.txtBoxAddress.Name = "txtBoxAddress";
             this.txtBoxAddress.Size = new System.Drawing.Size(157, 20);
             this.txtBoxAddress.TabIndex = 15;
             // 
             // txtBoxOblast
             // 
-            this.txtBoxOblast.Location = new System.Drawing.Point(146, 395);
+            this.txtBoxOblast.Location = new System.Drawing.Point(146, 292);
             this.txtBoxOblast.Name = "txtBoxOblast";
             this.txtBoxOblast.Size = new System.Drawing.Size(157, 20);
             this.txtBoxOblast.TabIndex = 16;
             // 
             // txtBoxCity
             // 
-            this.txtBoxCity.Location = new System.Drawing.Point(146, 438);
+            this.txtBoxCity.Location = new System.Drawing.Point(146, 328);
             this.txtBoxCity.Name = "txtBoxCity";
             this.txtBoxCity.Size = new System.Drawing.Size(157, 20);
             this.txtBoxCity.TabIndex = 17;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(46, 504);
+            this.btnUpdate.Location = new System.Drawing.Point(46, 404);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 18;
@@ -222,7 +186,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(166, 504);
+            this.btnDelete.Location = new System.Drawing.Point(165, 404);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 20;
@@ -328,7 +292,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(552, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(566, 577);
+            this.dataGridView1.Size = new System.Drawing.Size(566, 536);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -336,7 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1130, 601);
+            this.ClientSize = new System.Drawing.Size(1130, 563);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDetalis);
@@ -350,15 +314,11 @@
             this.Controls.Add(this.txtBoxOblast);
             this.Controls.Add(this.txtBoxAddress);
             this.Controls.Add(this.txtBoxPhone);
-            this.Controls.Add(this.txtFather);
-            this.Controls.Add(this.txtMother);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -380,15 +340,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtMother;
-        private System.Windows.Forms.TextBox txtFather;
         private System.Windows.Forms.TextBox txtBoxPhone;
         private System.Windows.Forms.TextBox txtBoxAddress;
         private System.Windows.Forms.TextBox txtBoxOblast;

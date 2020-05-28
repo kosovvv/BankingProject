@@ -24,7 +24,7 @@ namespace BankingProject.Tests
 
             var service = new UserAccountController(mockContext.Object);
             service.Add(new UserAccount(1, "Georgi Georgiev", "11/06/2000", "0878444484", "bul Bulgaria 4", "Smolyan", "Smolyan", "Male", "married",
-                    "Maria", "Yordan", 7500, date.ToString()));
+                    null, null, 7500, date.ToString()));
 
             mockSet.Verify(m => m.Add(It.IsAny<UserAccount>()), Times.Once());
             mockContext.Verify(m => m.SaveChanges(), Times.Once());
