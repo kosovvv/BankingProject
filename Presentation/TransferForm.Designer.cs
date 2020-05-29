@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,22 +41,13 @@
             this.txtTransfer = new System.Windows.Forms.TextBox();
             this.btnTransfer = new System.Windows.Forms.Button();
             this.btnDetails = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(51, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Днешна дата";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(179, 30);
+            this.lblDate.Location = new System.Drawing.Point(82, 30);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(35, 13);
             this.lblDate.TabIndex = 1;
@@ -145,7 +135,7 @@
             // 
             // btnTransfer
             // 
-            this.btnTransfer.Location = new System.Drawing.Point(33, 249);
+            this.btnTransfer.Location = new System.Drawing.Point(33, 231);
             this.btnTransfer.Name = "btnTransfer";
             this.btnTransfer.Size = new System.Drawing.Size(111, 37);
             this.btnTransfer.TabIndex = 12;
@@ -155,7 +145,7 @@
             // 
             // btnDetails
             // 
-            this.btnDetails.Location = new System.Drawing.Point(298, 68);
+            this.btnDetails.Location = new System.Drawing.Point(281, 68);
             this.btnDetails.Name = "btnDetails";
             this.btnDetails.Size = new System.Drawing.Size(89, 37);
             this.btnDetails.TabIndex = 13;
@@ -163,11 +153,21 @@
             this.btnDetails.UseVisualStyleBackColor = true;
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(30, 30);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Дата";
+            // 
             // TransferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 371);
+            this.ClientSize = new System.Drawing.Size(450, 288);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.btnTransfer);
             this.Controls.Add(this.txtTransfer);
@@ -181,7 +181,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.label1);
             this.Name = "TransferForm";
             this.Text = "TransferForm";
             this.ResumeLayout(false);
@@ -190,8 +189,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -205,5 +202,6 @@
         private System.Windows.Forms.TextBox txtTransfer;
         private System.Windows.Forms.Button btnTransfer;
         private System.Windows.Forms.Button btnDetails;
+        private System.Windows.Forms.Label label7;
     }
 }

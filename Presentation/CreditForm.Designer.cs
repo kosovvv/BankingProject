@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,22 +41,13 @@
             this.txtDepositAmount = new System.Windows.Forms.TextBox();
             this.btnGetDetails = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(134, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Днешна дата";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(252, 39);
+            this.lblDate.Location = new System.Drawing.Point(64, 37);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(35, 13);
             this.lblDate.TabIndex = 1;
@@ -110,11 +100,11 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(34, 288);
+            this.btnUpdate.Location = new System.Drawing.Point(23, 247);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(89, 35);
             this.btnUpdate.TabIndex = 7;
-            this.btnUpdate.Text = "Обнови";
+            this.btnUpdate.Text = "Запази";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -148,7 +138,7 @@
             // 
             // btnGetDetails
             // 
-            this.btnGetDetails.Location = new System.Drawing.Point(369, 39);
+            this.btnGetDetails.Location = new System.Drawing.Point(330, 77);
             this.btnGetDetails.Name = "btnGetDetails";
             this.btnGetDetails.Size = new System.Drawing.Size(89, 35);
             this.btnGetDetails.TabIndex = 13;
@@ -164,11 +154,21 @@
             this.comboBox1.Size = new System.Drawing.Size(153, 21);
             this.comboBox1.TabIndex = 14;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Дата";
+            // 
             // CreditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 412);
+            this.ClientSize = new System.Drawing.Size(470, 303);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnGetDetails);
             this.Controls.Add(this.txtDepositAmount);
@@ -182,7 +182,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.label1);
             this.Name = "CreditForm";
             this.Text = "CreditForm";
             this.ResumeLayout(false);
@@ -191,8 +190,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -206,5 +203,6 @@
         private System.Windows.Forms.TextBox txtDepositAmount;
         private System.Windows.Forms.Button btnGetDetails;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

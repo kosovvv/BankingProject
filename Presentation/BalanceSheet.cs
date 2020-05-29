@@ -30,6 +30,9 @@ namespace BankingProject
         private void btnShow_Click(object sender, EventArgs e)
         {
             decimal b = Convert.ToDecimal(txtName.Text);
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView2.AutoGenerateColumns = false;
+            dataGridView3.AutoGenerateColumns = false;
             dataGridView1.DataSource = debitcontroller.GetDebitDetails(b);
             dataGridView2.DataSource = depositcontroller.GetDepositDetails(b);
             dataGridView3.DataSource = transfercontroller.GetTransferDetails(b);

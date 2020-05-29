@@ -366,14 +366,23 @@
     <Compile Include="Presentation\UpdateForm.Designer.cs">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Presentation\BalanceSheet.resx">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\CreditForm.resx">
       <DependentUpon>CreditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\DebitForm.resx">
       <DependentUpon>DebitForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\newAccount.resx">
       <DependentUpon>newAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\TransferForm.resx">
+      <DependentUpon>TransferForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>

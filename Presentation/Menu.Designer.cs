@@ -40,8 +40,6 @@
             this.изгледToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.balanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.другиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,21 +70,21 @@
             // newAccountToolStripMenuItem1
             // 
             this.newAccountToolStripMenuItem1.Name = "newAccountToolStripMenuItem1";
-            this.newAccountToolStripMenuItem1.Size = new System.Drawing.Size(209, 22);
+            this.newAccountToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.newAccountToolStripMenuItem1.Text = "Нов акаунт";
             this.newAccountToolStripMenuItem1.Click += new System.EventHandler(this.newAccountToolStripMenuItem1_Click);
             // 
             // updatesearchaccountToolStripMenuItem
             // 
             this.updatesearchaccountToolStripMenuItem.Name = "updatesearchaccountToolStripMenuItem";
-            this.updatesearchaccountToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.updatesearchaccountToolStripMenuItem.Text = "Обнови/Потърси акаунт";
+            this.updatesearchaccountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updatesearchaccountToolStripMenuItem.Text = "Обнови акаунт";
             this.updatesearchaccountToolStripMenuItem.Click += new System.EventHandler(this.updatesearchaccountToolStripMenuItem_Click);
             // 
             // AllCustomersToolStripMenuItem
             // 
             this.AllCustomersToolStripMenuItem.Name = "AllCustomersToolStripMenuItem";
-            this.AllCustomersToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.AllCustomersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.AllCustomersToolStripMenuItem.Text = "Всички клиенти";
             this.AllCustomersToolStripMenuItem.Click += new System.EventHandler(this.AllCustomersToolStripMenuItem_Click);
             // 
@@ -103,21 +101,21 @@
             // depositToolStripMenuItem
             // 
             this.depositToolStripMenuItem.Name = "depositToolStripMenuItem";
-            this.depositToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.depositToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.depositToolStripMenuItem.Text = "Депозит";
             this.depositToolStripMenuItem.Click += new System.EventHandler(this.depositToolStripMenuItem_Click);
             // 
             // withdrawlToolStripMenuItem
             // 
             this.withdrawlToolStripMenuItem.Name = "withdrawlToolStripMenuItem";
-            this.withdrawlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.withdrawlToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.withdrawlToolStripMenuItem.Text = "Теглене";
             this.withdrawlToolStripMenuItem.Click += new System.EventHandler(this.withdrawlToolStripMenuItem_Click);
             // 
             // transferToolStripMenuItem
             // 
             this.transferToolStripMenuItem.Name = "transferToolStripMenuItem";
-            this.transferToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.transferToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.transferToolStripMenuItem.Text = "Превод";
             this.transferToolStripMenuItem.Click += new System.EventHandler(this.transferToolStripMenuItem_Click);
             // 
@@ -132,38 +130,22 @@
             // balanceToolStripMenuItem
             // 
             this.balanceToolStripMenuItem.Name = "balanceToolStripMenuItem";
-            this.balanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.balanceToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.balanceToolStripMenuItem.Text = "Баланс";
             this.balanceToolStripMenuItem.Click += new System.EventHandler(this.balanceToolStripMenuItem_Click);
             // 
             // другиToolStripMenuItem
             // 
             this.другиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logoutToolStripMenuItem,
-            this.changePasswordToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.другиToolStripMenuItem.Name = "другиToolStripMenuItem";
             this.другиToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.другиToolStripMenuItem.Text = "Други";
             // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logoutToolStripMenuItem.Text = "Излез";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
-            // 
-            // changePasswordToolStripMenuItem
-            // 
-            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.changePasswordToolStripMenuItem.Text = "Смяна на парола";
-            //this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
-            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.exitToolStripMenuItem.Text = "Затвори";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -199,8 +181,6 @@
         private System.Windows.Forms.ToolStripMenuItem изгледToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem balanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem другиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
