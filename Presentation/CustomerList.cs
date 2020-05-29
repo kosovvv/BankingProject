@@ -30,6 +30,7 @@ namespace BankingProject
         {
             dataGridView1.AutoGenerateColumns = false;
             var item = accController.GetAllAccounts();
+            item.RemoveAt(0);
             dataGridView1.DataSource = item;
         }
     }
