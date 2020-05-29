@@ -89,6 +89,7 @@ namespace BankingProject
         {
             decimal accNo = Convert.ToDecimal(txtAccNumber.Text);
             var acc = accController.Get(accNo).First();
+            acc.AccountNo = Convert.ToInt32(txtAccNumber.Text);
             acc.Name = txtName.Text;
             acc.Dob = dateTimePicker1.Value.ToString();
             acc.MotherName = null;
