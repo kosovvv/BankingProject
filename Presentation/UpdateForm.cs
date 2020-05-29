@@ -55,6 +55,7 @@ namespace BankingProject
             var item = accController.Get(accNo).FirstOrDefault();
             txtAccNumber.Text = item.AccountNo.ToString();
             txtName.Text = item.Name;
+            dateTimePicker1.Value = Convert.ToDateTime(item.Dob);
             txtBoxPhone.Text = item.PhoneNo;
             txtBoxAddress.Text = item.Address;
             txtBoxOblast.Text = item.Oblast;
@@ -89,7 +90,7 @@ namespace BankingProject
             decimal accNo = Convert.ToDecimal(txtAccNumber.Text);
             var acc = accController.Get(accNo).First();
             acc.Name = txtName.Text;
-            acc.Date = dateTimePicker1.Value.ToString();
+            acc.Dob = dateTimePicker1.Value.ToString();
             acc.MotherName = null;
             acc.FatherName = null;
             acc.PhoneNo = txtBoxPhone.Text;
