@@ -122,6 +122,7 @@ namespace BankingProject
             acc.State = txtBoxCity.Text;
             accController.Update(acc);
             MessageBox.Show("Данните са обновени!");
+            dataGridView1.Update();
         }
     }
 }
