@@ -2,4 +2,4 @@ Windows Form Application
 
 Used techologies: 
 
-C#,.NET, MySQL
+C#,.NET, MySQL, MVC Framework
